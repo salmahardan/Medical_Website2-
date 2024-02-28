@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.CSS">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+ <div class="wrapper">
+  <form>
+    <h1> تسجيل الدخول </h1>
+     
+    <div class="input-box">
+      <input type="text" placeholder=" اسم المستخدم " required id="username">
+      <i class='bx bxs-user'></i>
+    </div>
+
+    <div class="input-box">
+      <input type="password" placeholder=" كلمة المرور " required id="password">
+      <i class='bx bxs-lock-alt'></i>
+    </div>
+
+    <div class="remember-forgot">
+      <label><input type="checkbox"> تذكرني </label>
+      <a href="#"> هل نسيت كلمة المرور </a>
+    </div>
+
+    <button type="button" class="btn" onclick="validateLogin()"> تسجيل الدخول </button>
+
+    <div class="register-link"><br>
+      <p> ليس لديك حساب ? <a href="#"> يسجل </a> </p>
+    </div>
+  </form>
+ </div>
+
+ <script>
+  function validateLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+  
+      if (username === "salma" && password === "166") {
+          window.location.href = "موقع 1.html";
+      } else {
+          alert("معلومات الدخول غير صحيحة");
+      }
+  }
+ </script>
+</body>
+</html>
